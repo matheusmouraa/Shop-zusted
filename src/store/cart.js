@@ -5,7 +5,7 @@ export const useCartStore = create(set => {
   const setState = fn => set(produce(fn))
 
   const initialState = {
-    open: false,
+    open: true,
     products: []
   }
 
