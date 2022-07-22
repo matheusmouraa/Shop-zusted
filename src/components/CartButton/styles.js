@@ -10,6 +10,8 @@ export const Container = styled.button`
   background: white;
   border: 0;
   border-radius: 0.5rem;
+
+  cursor: pointer;
 `
 
 export const CartImage = styled.img`

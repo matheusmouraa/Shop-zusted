@@ -5,7 +5,7 @@ export const useCartStore = create(set => {
   const setState = fn => set(produce(fn))
 
   const initialState = {
-    open: true,
+    open: false,
     products: []
   }
 
@@ -22,6 +22,9 @@ export const useCartStore = create(set => {
         setState(({ state }) => {
           if (!original(state.products).includes(product)) {
             state.products.push(product)
+          } else {
+            original(state.products).indexOf(product).quantity +=
+              product.quantity
           }
           state.open = true
         }),
@@ -32,9 +35,9 @@ export const useCartStore = create(set => {
             state.products.splice(index, 1)
           }
         }),
-      removeAll: () =>
+      removeAll: product =>
         setState(({ state }) => {
-          state.products = []
+          state.products.pop(product)
         }),
       reset: () => set({ state: { ...initialState } })
     }

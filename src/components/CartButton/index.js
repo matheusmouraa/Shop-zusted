@@ -4,9 +4,9 @@ import { Container, Content } from './styles'
 import { ShoppingCart } from 'react-feather'
 
 export function CartButton() {
-  const { toogle } = useCartStore(store => store.actions)
+  const { toggle } = useCartStore(store => store.actions)
   return (
-    <Container onClick={toogle}>
+    <Container onClick={toggle}>
       <ShoppingCart color="black" size={20} />
       <Content>10</Content>
     </Container>
