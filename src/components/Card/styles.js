@@ -40,13 +40,6 @@ export const Price = styled.div`
   color: #ffffff;
 `
 
-export const Description = styled.p`
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  font-size: 0.75rem;
-  color: #2c2c2c;
-`
-
 export const BuyButton = styled.button`
   display: flex;
   justify-content: space-evenly;

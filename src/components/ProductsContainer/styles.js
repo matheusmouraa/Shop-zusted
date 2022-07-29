@@ -15,9 +15,9 @@ export const Products = styled.div`
   grid-row-gap: 1.3rem;
   grid-column-gap: 2rem;
 
-  @media (max-width: 640px) {
+  @media (max-width: 1024px) {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    padding-top: 38rem;
+    padding-top: 32rem;
     padding-bottom: 1rem;
   }
 

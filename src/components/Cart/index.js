@@ -1,5 +1,5 @@
 import { useCartStore } from '../../store/cart'
-import { Container, Title, CloseButton } from './styles'
+import { Container, Header, Title, CloseButton, FinishedButton } from './styles'
 
 import { X } from 'react-feather'
 
@@ -9,12 +9,15 @@ export function Cart() {
 
   return (
     <Container open={open}>
-      <Title>
-        Carrinho <br /> de compras
-      </Title>
-      <CloseButton onClick={toggle}>
-        <X color="white" size={20} />
-      </CloseButton>
+      <Header>
+        <Title>
+          Carrinho <br /> de compras
+        </Title>
+        <CloseButton onClick={toggle}>
+          <X color="white" size={20} />
+        </CloseButton>
+      </Header>
+      <FinishedButton />
     </Container>
   )
 }
