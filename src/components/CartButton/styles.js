@@ -14,11 +14,6 @@ export const Container = styled.button`
   cursor: pointer;
 `
 
-export const CartImage = styled.img`
-  width: 1.2rem;
-  height: 1.2rem;
-`
-
 export const Content = styled.h2`
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
