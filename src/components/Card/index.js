@@ -1,16 +1,25 @@
-import { Container, ProductImage, Content, Price, BuyButton } from './styles'
+import {
+  Container,
+  ProductImage,
+  Content,
+  Title,
+  Price,
+  BuyButton
+} from './styles'
 
 import { ShoppingBag } from 'react-feather'
 
-export function Card({ name, img, price }) {
+export function Card({ name, image, price }) {
   return (
     <Container>
-      <ProductImage src={img} alt={`Imagem do produto ${name}`} />
-      <Content>{name}</Content>
-      <Price>{`R$ ${price}`}</Price>
+      <ProductImage src={image} alt={`Imagem do produto ${name}`} />
+      <Content>
+        <Title>{name}</Title>
+        <Price>{`R$ ${price}`}</Price>
+      </Content>
       <BuyButton>
-        <ShoppingBag size={16} color="white" />
         Comprar
+        <ShoppingBag size={16} color="white" />
       </BuyButton>
     </Container>
   )

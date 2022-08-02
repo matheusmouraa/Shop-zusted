@@ -5,7 +5,7 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
-  width: 13.5rem;
+  width: 15rem;
 
   background: #ffffff;
   box-shadow: 0rem 0.12rem 0.5rem rgba(0, 0, 0, 0.13);
@@ -13,11 +13,22 @@ export const Container = styled.div`
 `
 
 export const ProductImage = styled.img`
-  width: 85%;
-  height: 120px;
+  margin-top: 0.3rem;
+  width: 70%;
+  min-width: 120px;
+  height: 150px;
 `
 
-export const Content = styled.h3`
+export const Content = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+`
+
+export const Title = styled.h3`
+  width: 70%;
+
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -28,8 +39,8 @@ export const Price = styled.div`
   justify-content: center;
   align-items: center;
 
-  width: 4rem;
-  height: 1.6rem;
+  min-width: 75px;
+  height: 1.4rem;
 
   border-radius: 0.3rem;
   background: #373737;
@@ -42,8 +53,10 @@ export const Price = styled.div`
 
 export const BuyButton = styled.button`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
 
   width: 100%;
   height: 2rem;
@@ -51,4 +64,9 @@ export const BuyButton = styled.button`
   border: 0rem;
   border-radius: 0 0 0.5rem 0.5rem;
   background: #0f52ba;
+
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #fff;
 `

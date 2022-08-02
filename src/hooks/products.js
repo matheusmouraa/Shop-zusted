@@ -5,12 +5,12 @@ import axios from 'axios'
 export const ProductsContext = createContext({})
 
 function ProductsProvider({ children }) {
-  const [products, SetProducts] = useState([])
+  const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
 
   async function fetchProducts() {
     const response = await axios.get('/products')
-    SetProducts(response.data.products)
+    setProducts(response.data.products)
     setLoading(false)
   }
 
