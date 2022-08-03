@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   right: 0;
   top: 0;
 
@@ -20,11 +20,10 @@ export const Container = styled.div`
   transition: width 1s;
 `
 
-export const Header = styled.header`
+export const Header = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-direction: row;
+  justify-content: space-between;
 `
 
 export const Title = styled.h1`
@@ -52,9 +51,21 @@ export const CloseButton = styled.button`
 `
 
 export const FinishedButton = styled.button`
-  align-items: flex-end;
-  width: 100%;
-  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  margin: 0;
+  justify-self: flex-end;
+  width: 100%;
+  height: 6rem;
+
+  border: 0;
+  background: black;
+
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: white;
+
+  cursor: pointer;
 `

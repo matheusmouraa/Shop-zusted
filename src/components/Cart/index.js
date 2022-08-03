@@ -4,7 +4,7 @@ import { Container, Header, Title, CloseButton, FinishedButton } from './styles'
 import { X } from 'react-feather'
 
 export function Cart() {
-  const { open } = useCartStore(store => store.state)
+  const { open, products } = useCartStore(store => store.state)
   const { toggle } = useCartStore(store => store.actions)
 
   return (
@@ -17,7 +17,8 @@ export function Cart() {
           <X color="white" size={20} />
         </CloseButton>
       </Header>
-      <FinishedButton />
+
+      <FinishedButton>Finalizar Compra</FinishedButton>
     </Container>
   )
 }

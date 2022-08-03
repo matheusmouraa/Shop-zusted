@@ -15,19 +15,21 @@ export const Container = styled.div`
 export const ProductImage = styled.img`
   margin-top: 0.3rem;
   width: 70%;
-  min-width: 120px;
-  height: 150px;
+  min-width: 7.5rem;
+  height: 9.3rem;
 `
 
 export const Content = styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin: auto;
+  padding: 0.7rem;
+
+  min-height: 3.75rem;
 `
 
 export const Title = styled.h3`
-  width: 70%;
+  width: 7.75rem;
 
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -39,7 +41,7 @@ export const Price = styled.div`
   justify-content: center;
   align-items: center;
 
-  min-width: 75px;
+  min-width: 4.68rem;
   height: 1.4rem;
 
   border-radius: 0.3rem;
@@ -57,6 +59,7 @@ export const BuyButton = styled.button`
   align-items: center;
   flex-direction: row;
   gap: 0.5rem;
+  margin: auto;
 
   width: 100%;
   height: 2rem;
@@ -69,4 +72,6 @@ export const BuyButton = styled.button`
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #fff;
+
+  cursor: pointer;
 `

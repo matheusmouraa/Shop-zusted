@@ -17,16 +17,19 @@ export const Products = styled.div`
 
   @media (max-width: 1024px) {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    padding-top: 32rem;
+    padding-top: 85rem;
     padding-bottom: 1rem;
   }
 
   @media (min-width: 1024px) {
     grid-template-columns: repeat(2, minmax(0, 2fr));
+    padding-top: 20rem;
+    padding-bottom: 1rem;
   }
 
   @media (min-width: 1280px) {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: 0;
     margin-top: 2rem;
   }
 `
