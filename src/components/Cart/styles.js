@@ -51,6 +51,9 @@ export const CloseButton = styled.button`
 `
 
 export const FinishedButton = styled.button`
+  position: absolute;
+  bottom: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;

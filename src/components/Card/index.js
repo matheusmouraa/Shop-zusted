@@ -1,3 +1,8 @@
+import { useState } from 'react'
+
+import { ShoppingBag } from 'react-feather'
+import { useCartStore } from '../../store/cart'
+
 import {
   Container,
   ProductImage,
@@ -7,17 +12,23 @@ import {
   BuyButton
 } from './styles'
 
-import { ShoppingBag } from 'react-feather'
+export function Card({ props }) {
+  const { add } = useCartStore(store => store.actions)
+  const { products } = useCartStore(store => store.state)
 
-export function Card({ name, image, price }) {
+  function handleAddProduct() {
+    add(props)
+    console.log(products)
+  }
+
   return (
     <Container>
-      <ProductImage src={image} alt={`Imagem do produto ${name}`} />
+      <ProductImage src={props.image} alt={`Imagem do produto ${props.name}`} />
       <Content>
-        <Title>{name}</Title>
-        <Price>{`R$ ${price}`}</Price>
+        <Title>{props.name}</Title>
+        <Price>{`R$ ${props.price}`}</Price>
       </Content>
-      <BuyButton>
+      <BuyButton onClick={handleAddProduct}>
         Comprar
         <ShoppingBag size={16} color="white" />
       </BuyButton>

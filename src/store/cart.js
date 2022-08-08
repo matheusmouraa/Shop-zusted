@@ -22,20 +22,9 @@ export const useCartStore = create(set => {
         setState(({ state }) => {
           if (!original(state.products).includes(product)) {
             state.products.push(product)
-          } else {
-            original(state.products).indexOf(product).quantity +=
-              product.quantity
           }
-          state.open = true
         }),
       remove: product =>
-        setState(({ state }) => {
-          const index = original(state.products).indexOf(product)
-          if (index > -1) {
-            state.products.splice(index, 1)
-          }
-        }),
-      removeAll: product =>
         setState(({ state }) => {
           state.products.pop(product)
         }),

@@ -21,12 +21,7 @@ export function ProductsContainer() {
         <Container>
           <Products>
             {products.map(item => (
-              <Card
-                key={item.id}
-                name={item.name}
-                image={item.image}
-                price={item.price}
-              />
+              <Card key={item.id} props={item} />
             ))}
           </Products>
         </Container>
