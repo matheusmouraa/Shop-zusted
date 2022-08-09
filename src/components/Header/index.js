@@ -1,6 +1,6 @@
 import { CartButton } from '../CartButton'
 
-import { Container, Content, Title, Subtitle } from './styles'
+import { Container, Content, Title } from './styles'
 
 export function Header() {
   return (

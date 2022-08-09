@@ -1,6 +1,6 @@
 import { createServer } from 'miragejs'
 
-export default function () {
+export default function Server() {
   createServer({
     routes() {
       this.get('/products', () => ({

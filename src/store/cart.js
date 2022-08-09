@@ -28,6 +28,10 @@ export const useCartStore = create(set => {
         setState(({ state }) => {
           state.products.pop(product)
         }),
+      removeAll: () =>
+        setState(({ state }) => {
+          state.products = []
+        }),
       reset: () => set({ state: { ...initialState } })
     }
   }

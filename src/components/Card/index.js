@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import { ShoppingBag } from 'react-feather'
 import { useCartStore } from '../../store/cart'
 

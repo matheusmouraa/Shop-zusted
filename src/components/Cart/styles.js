@@ -23,7 +23,11 @@ export const Container = styled.div`
 export const Header = styled.div`
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
+  padding: 2rem 2.5rem;
+
+  width: 100%;
 `
 
 export const Title = styled.h1`
@@ -43,7 +47,7 @@ export const CloseButton = styled.button`
   height: 2.2rem;
 
   border: 0;
-  border-radius: 1rem;
+  border-radius: 2rem;
   background: black;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
