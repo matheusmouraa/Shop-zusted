@@ -54,6 +54,17 @@ export const CloseButton = styled.button`
   cursor: pointer;
 `
 
+export const CardsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 2.5rem;
+
+  width: 100%;
+
+  gap: 1.7rem;
+`
+
 export const FinishedButton = styled.button`
   position: absolute;
   bottom: 0;

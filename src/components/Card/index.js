@@ -12,11 +12,9 @@ import {
 
 export function Card({ props }) {
   const { add } = useCartStore(store => store.actions)
-  const { products } = useCartStore(store => store.state)
 
   function handleAddProduct() {
     add(props)
-    console.log(products)
   }
 
   return (

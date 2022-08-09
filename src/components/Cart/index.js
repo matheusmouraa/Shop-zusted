@@ -1,17 +1,25 @@
 import { useCartStore } from '../../store/cart'
-import { Container, Header, Title, CloseButton, FinishedButton } from './styles'
+import {
+  Container,
+  Header,
+  Title,
+  CloseButton,
+  CardsContainer,
+  FinishedButton
+} from './styles'
 
 import { X } from 'react-feather'
 import swal from 'sweetalert'
+import { CartProduct } from '../CartProduct'
 
 export function Cart() {
-  const { open } = useCartStore(store => store.state)
+  const { open, products } = useCartStore(store => store.state)
   const { toggle, removeAll } = useCartStore(store => store.actions)
 
   function handleFinishedBuy() {
     removeAll()
     toggle()
-    swal('Compra finalizada!', 'Obrigado pela preferencia!!', 'success')
+    swal('Compra finalizada!', 'Obrigado pela preferencia.', 'success')
   }
 
   return (
@@ -24,6 +32,12 @@ export function Cart() {
           <X color="white" size={20} />
         </CloseButton>
       </Header>
+
+      <CardsContainer>
+        {products.map(item => (
+          <CartProduct key={item.id} product={item} />
+        ))}
+      </CardsContainer>
 
       <FinishedButton onClick={handleFinishedBuy}>
         Finalizar Compra
