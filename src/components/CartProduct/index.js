@@ -12,12 +12,12 @@ export function CartProduct({ product }) {
 
   return (
     <Container>
+      <ProductImage src={product.image} />
+      <Title>{product.name}</Title>
+      <Price>{`R$${product.price}`}</Price>
       <RemoveButton onClick={handleRemoveProduct}>
         <X />
       </RemoveButton>
-      <ProductImage src={product.image} />
-      <Title>{product.name}</Title>
-      <Price>{`R$ ${product.price}`}</Price>
     </Container>
   )
 }

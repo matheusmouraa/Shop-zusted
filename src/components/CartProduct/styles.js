@@ -6,6 +6,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
+  padding: 0 1.2rem;
 
   width: 100%;
   height: 95px;
@@ -31,10 +32,18 @@ export const RemoveButton = styled.button`
 `
 
 export const ProductImage = styled.img`
-  width: 46px;
-  height: 57px;
+  width: 70px;
+  height: 65px;
 `
 
-export const Title = styled.h2``
+export const Title = styled.h2`
+  margin-left: 0.5rem;
+  width: 150px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #2c2c2c;
+`
 
 export const Price = styled.h3``

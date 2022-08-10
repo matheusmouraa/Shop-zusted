@@ -33,7 +33,7 @@ export function Cart() {
         </CloseButton>
       </Header>
 
-      <CardsContainer>
+      <CardsContainer scrollbar={products.length > 6 ? true : false}>
         {products.map(item => (
           <CartProduct key={item.id} product={item} />
         ))}

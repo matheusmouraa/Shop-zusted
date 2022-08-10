@@ -26,7 +26,7 @@ export const useCartStore = create(set => {
         }),
       remove: product =>
         setState(({ state }) => {
-          state.products.pop(product)
+          state.products.splice(product, 1)
         }),
       removeAll: () =>
         setState(({ state }) => {

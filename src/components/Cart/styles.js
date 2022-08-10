@@ -55,14 +55,16 @@ export const CloseButton = styled.button`
 `
 
 export const CardsContainer = styled.div`
-  display: flex;
+  display: grid;
   align-items: center;
   flex-direction: column;
-  padding: 2rem 2.5rem;
+  padding: 2rem 2.5rem 8rem;
+  gap: 1.2rem;
 
   width: 100%;
 
-  gap: 1.7rem;
+  overflow-y: ${({ scrollbar }) => (scrollbar ? 'scrollbar' : 'hidden')};
+  overflow-x: hidden;
 `
 
 export const FinishedButton = styled.button`
@@ -73,7 +75,6 @@ export const FinishedButton = styled.button`
   justify-content: center;
   align-items: center;
 
-  justify-self: flex-end;
   width: 100%;
   height: 6rem;
 
