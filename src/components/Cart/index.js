@@ -5,6 +5,8 @@ import {
   Title,
   CloseButton,
   CardsContainer,
+  PriceContainer,
+  TotalPrice,
   FinishedButton
 } from './styles'
 
@@ -33,11 +35,16 @@ export function Cart() {
         </CloseButton>
       </Header>
 
-      <CardsContainer scrollbar={products.length > 6 ? true : false}>
+      <CardsContainer>
         {products.map(item => (
           <CartProduct key={item.id} product={item} />
         ))}
       </CardsContainer>
+
+      <PriceContainer>
+        <TotalPrice>Total:</TotalPrice>
+        <TotalPrice>R$800</TotalPrice>
+      </PriceContainer>
 
       <FinishedButton onClick={handleFinishedBuy}>
         Finalizar Compra

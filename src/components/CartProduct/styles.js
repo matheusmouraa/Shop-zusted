@@ -46,4 +46,10 @@ export const Title = styled.h2`
   color: #2c2c2c;
 `
 
-export const Price = styled.h3``
+export const Price = styled.h3`
+  margin-left: 1.5rem;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+`

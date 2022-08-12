@@ -63,9 +63,23 @@ export const CardsContainer = styled.div`
 
   width: 100%;
 
-  overflow-y: ${({ scrollbar }) => (scrollbar ? 'scrollbar' : 'hidden')};
+  overflow-y: scrollbar;
   overflow-x: hidden;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 `
+
+export const PriceContainer = styled.div`
+  width: 100%;
+  height: 100px;
+`
+
+export const TotalPrice = styled.h3``
 
 export const FinishedButton = styled.button`
   position: absolute;
