@@ -58,7 +58,7 @@ export const CardsContainer = styled.div`
   display: grid;
   align-items: center;
   flex-direction: column;
-  padding: 2rem 2.5rem 8rem;
+  padding: 2rem 2.5rem 4rem;
   gap: 1.2rem;
 
   width: 100%;
@@ -75,11 +75,25 @@ export const CardsContainer = styled.div`
 `
 
 export const PriceContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: 96px;
+  padding: 0 47px;
+
   width: 100%;
-  height: 100px;
+  min-height: 100px;
 `
 
-export const TotalPrice = styled.h3``
+export const TotalPrice = styled.h3`
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+
+  color: #fff;
+`
 
 export const FinishedButton = styled.button`
   position: absolute;
