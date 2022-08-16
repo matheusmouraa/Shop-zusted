@@ -2,11 +2,12 @@ import create from 'zustand'
 import produce, { original } from 'immer'
 
 export const useCartStore = create(set => {
-  const setState = fn => set(produce(fn))
+  const setState = state => set(produce(state))
 
   const initialState = {
     open: false,
-    products: []
+    products: [],
+    totalPrice: 0
   }
 
   return {
@@ -22,15 +23,18 @@ export const useCartStore = create(set => {
         setState(({ state }) => {
           if (!original(state.products).includes(product)) {
             state.products.push(product)
+            state.totalPrice += product.price
           }
         }),
       remove: product =>
         setState(({ state }) => {
           state.products.splice(product, 1)
+          state.totalPrice -= product.price
         }),
       removeAll: () =>
         setState(({ state }) => {
           state.products = []
+          state.totalPrice = 0
         }),
       reset: () => set({ state: { ...initialState } })
     }
