@@ -8,6 +8,7 @@ export function Header() {
       <Content>
         <Title>Shop</Title>
       </Content>
+
       <CartButton />
     </Container>
   )

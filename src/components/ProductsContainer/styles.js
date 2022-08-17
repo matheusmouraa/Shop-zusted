@@ -11,7 +11,6 @@ export const Container = styled.main`
 export const Products = styled.div`
   display: grid;
   justify-content: center;
-
   grid-row-gap: 1.3rem;
   grid-column-gap: 2rem;
 

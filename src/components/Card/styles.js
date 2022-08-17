@@ -14,6 +14,7 @@ export const Container = styled.div`
 
 export const ProductImage = styled.img`
   margin-top: 0.3rem;
+
   width: 70%;
   min-width: 7.5rem;
   height: 9.3rem;
@@ -41,7 +42,7 @@ export const Price = styled.div`
   justify-content: center;
   align-items: center;
 
-  width: 4.68rem;
+  width: 4.7rem;
   height: 1.4rem;
 
   border-radius: 0.3rem;

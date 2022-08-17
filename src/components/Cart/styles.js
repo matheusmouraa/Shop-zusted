@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { X } from 'react-feather'
+
 export const Container = styled.div`
   position: fixed;
   z-index: 2;
@@ -34,7 +36,6 @@ export const Title = styled.h1`
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 1.5rem;
-  line-height: 2rem;
   color: #ffffff;
 `
 
@@ -54,6 +55,11 @@ export const CloseButton = styled.button`
   cursor: pointer;
 `
 
+export const FeatherIcon = styled(X)`
+  width: 1.2rem;
+  height: 1.2rem;
+`
+
 export const CardsContainer = styled.div`
   display: grid;
   align-items: center;
@@ -69,7 +75,6 @@ export const CardsContainer = styled.div`
   ::-webkit-scrollbar {
     display: none;
   }
-
   scrollbar-width: none;
   -ms-overflow-style: none;
 `
@@ -80,17 +85,17 @@ export const PriceContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-top: auto;
-  margin-bottom: 96px;
-  padding: 0 47px;
+  margin-bottom: 6rem;
+  padding: 0 2.9rem;
 
   width: 100%;
-  min-height: 100px;
+  min-height: 6.25rem;
 `
 
 export const TotalPrice = styled.h3`
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 1.75rem;
 
   color: #fff;
 `
@@ -112,7 +117,7 @@ export const FinishedButton = styled.button`
   font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: white;
+  color: #fff;
 
   cursor: pointer;
 `

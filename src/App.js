@@ -1,10 +1,10 @@
-import { GlobalStyle } from './styles/global'
+import { ProductsProvider } from './hooks/products'
 
 import { ProductsContainer } from './components/ProductsContainer'
 import { Header } from './components/Header'
 import { Cart } from './components/Cart'
 
-import { ProductsProvider } from './hooks/products'
+import { GlobalStyle } from './styles/global'
 
 import Server from './server'
 

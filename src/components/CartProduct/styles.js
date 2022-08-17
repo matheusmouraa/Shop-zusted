@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { X } from 'react-feather'
+
 export const Container = styled.div`
   position: relative;
 
@@ -9,7 +11,7 @@ export const Container = styled.div`
   padding: 0 1.2rem;
 
   width: 100%;
-  height: 95px;
+  height: 5.9rem;
   background: #fff;
 
   box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.05);
@@ -31,14 +33,19 @@ export const RemoveButton = styled.button`
   cursor: pointer;
 `
 
+export const FeatherIcon = styled(X)`
+  width: 1.5rem;
+  height: 1.5rem;
+`
+
 export const ProductImage = styled.img`
-  width: 70px;
-  height: 65px;
+  width: 4.3rem;
+  height: 4rem;
 `
 
 export const Title = styled.h2`
   margin-left: 0.5rem;
-  width: 150px;
+  width: 9.3rem;
 
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;

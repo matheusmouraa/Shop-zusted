@@ -1,6 +1,7 @@
 import { useCartStore } from '../../store/cart'
+
 import { CartProduct } from '../CartProduct'
-import { X } from 'react-feather'
+
 import swal from 'sweetalert'
 
 import {
@@ -8,6 +9,7 @@ import {
   Header,
   Title,
   CloseButton,
+  FeatherIcon,
   CardsContainer,
   PriceContainer,
   TotalPrice,
@@ -30,8 +32,9 @@ export function Cart() {
         <Title>
           Carrinho <br /> de compras
         </Title>
+
         <CloseButton onClick={toggle}>
-          <X color="white" size={20} />
+          <FeatherIcon color="white" />
         </CloseButton>
       </Header>
 
