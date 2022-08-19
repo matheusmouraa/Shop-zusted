@@ -85,7 +85,6 @@ export const PriceContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-top: auto;
-  margin-bottom: 6rem;
   padding: 0 2.9rem;
 
   width: 100%;
@@ -101,9 +100,6 @@ export const TotalPrice = styled.h3`
 `
 
 export const FinishedButton = styled.button`
-  position: absolute;
-  bottom: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;

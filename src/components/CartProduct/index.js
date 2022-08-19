@@ -21,7 +21,7 @@ export function CartProduct({ product }) {
       <Price>{`R$${product.price.toLocaleString('pt-br')}`}</Price>
 
       <RemoveButton onClick={() => remove(product)}>
-        <FeatherIcon />
+        <FeatherIcon size={32} />
       </RemoveButton>
     </Container>
   )

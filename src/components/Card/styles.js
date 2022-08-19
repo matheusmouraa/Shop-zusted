@@ -42,8 +42,7 @@ export const Price = styled.div`
   justify-content: center;
   align-items: center;
 
-  width: 4.7rem;
-  height: 1.4rem;
+  padding: 0.1rem 0.3rem;
 
   border-radius: 0.3rem;
   background: #373737;

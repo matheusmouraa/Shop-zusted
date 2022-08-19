@@ -14,16 +14,16 @@ export const Products = styled.div`
   grid-row-gap: 1.3rem;
   grid-column-gap: 2rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 840px) {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    padding-top: 85rem;
-    padding-bottom: 1rem;
+    padding-top: 95rem;
+    padding-bottom: 1.5rem;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 840px) {
     grid-template-columns: repeat(2, minmax(0, 2fr));
-    padding-top: 20rem;
-    padding-bottom: 1rem;
+    padding-top: 22rem;
+    padding-bottom: 1.5rem;
   }
 
   @media (min-width: 1280px) {
