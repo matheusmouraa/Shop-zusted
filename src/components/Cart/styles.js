@@ -19,7 +19,7 @@ export const Container = styled.div`
 
   box-shadow: -5px 0px 6px rgba(0, 0, 0, 0.13);
 
-  transition: width 1s;
+  transition: width 0.4s;
 `
 
 export const Header = styled.div`
@@ -100,20 +100,20 @@ export const TotalPrice = styled.h3`
 `
 
 export const FinishedButton = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   width: 100%;
   height: 6rem;
 
   border: 0;
   background: black;
 
+  cursor: pointer;
+`
+
+export const TextButton = styled.p`
+  width: 500px;
+
   font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #fff;
-
-  cursor: pointer;
 `

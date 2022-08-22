@@ -16,7 +16,7 @@ export const Products = styled.div`
 
   @media (max-width: 840px) {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    padding-top: 95rem;
+    padding-top: 90rem;
     padding-bottom: 1.5rem;
   }
 

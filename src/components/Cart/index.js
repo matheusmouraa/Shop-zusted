@@ -13,7 +13,8 @@ import {
   CardsContainer,
   PriceContainer,
   TotalPrice,
-  FinishedButton
+  FinishedButton,
+  TextButton
 } from './styles'
 
 export function Cart() {
@@ -50,7 +51,7 @@ export function Cart() {
       </PriceContainer>
 
       <FinishedButton onClick={handleFinishedBuy}>
-        Finalizar Compra
+        <TextButton>Finalizar Compra</TextButton>
       </FinishedButton>
     </Container>
   )
